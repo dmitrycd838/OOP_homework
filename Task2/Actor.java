@@ -6,6 +6,6 @@ public abstract class Actor implements ActorBehavior {
     protected boolean isMakeOrder;
     protected boolean isTakeOrder;
 
-    public abstract String getName();
+    public abstract String getName(); //
     
 }
