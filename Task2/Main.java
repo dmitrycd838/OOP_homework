@@ -3,14 +3,19 @@ package Task2;
 public class Main {
     public static void main(String[] args) {
         
-        Human human = new Human("dima");
-        System.out.println(human.getName());
-        System.out.println(human.isMakeOrder);
-        System.out.println(human.isTakeOrder);
-        human.setMakeOrder();
-        human.setTakeOrder();
-        System.out.println(human.isMakeOrder);
-        System.out.println(human.isTakeOrder);
-
+        Actor human1 = new Human("Dima");
+        Actor human2 = new Human("Vasya");
+        // System.out.println(human1.getName());
+        Market market = new Market();
+        
+        market.acceptToMarket(human1);
+        market.acceptToMarket(human2);
+        market.takeOrders();
+        market.takeInQueue(human1);
+        market.takeInQueue(human2);
+        market.giveOrders();
+        market.giveOrders();
+        market.releaseFromQueue();
+               
     }
 }
