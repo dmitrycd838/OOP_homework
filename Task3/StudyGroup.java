@@ -40,4 +40,9 @@ public class StudyGroup implements Iterable<Student> {
         return iterStud;
 
     }
+
+    @Override
+    public String toString() {
+        return getListOfStudents() + "";
+    }
 }
