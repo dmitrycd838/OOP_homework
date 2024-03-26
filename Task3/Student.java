@@ -15,6 +15,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("%s %s %d", firstName, lastName, age);
+        return String.format("%s %s %d", firstName, lastName, age); // метод toString для вывода в консоль 
     }
 }
