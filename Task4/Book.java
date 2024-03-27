@@ -1,20 +1,13 @@
 package Task4;
 
 public class Book<T> {
-    private T name; // final
+    private T title;
 
-    public Book(T name) {
-        this.name = name;
+    public Book(T title) {
+        this.title = title;
     }
 
-    public T getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {             
-        return "Book{" +
-                "book title= " + name +
-                '}';
+    public T getTitle() {
+        return title;
     }
 }
