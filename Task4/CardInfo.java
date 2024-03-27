@@ -1,10 +1,9 @@
 package Task4;
 
 public class CardInfo<T> {
+    
     private T title;
     
-   
-
     public CardInfo(T title) {
         this.title = title;
         
@@ -14,8 +13,6 @@ public class CardInfo<T> {
         return title;
     }
 
-
-    
 
     @Override
     public String toString() {
