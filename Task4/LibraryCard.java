@@ -1,35 +1,19 @@
 package Task4;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LibraryCard<K, V> {
-    K cardNum;
-    List<V> bookInfo = new ArrayList<>();
+    protected K cardNumber;
+    protected V bookInfo;
 
-    public LibraryCard(K cardNum, V initialBook) {
-        this.cardNum = cardNum;
-        bookInfo.add(initialBook);
+    public LibraryCard(K cardNumber, V bookInfo) {
+        this.cardNumber = cardNumber;
+        this.bookInfo = bookInfo;
     }
 
-    public K getCardNum() {
-        return cardNum;
+    public K getCardNumber() {
+        return cardNumber;
     }
 
-    public List<V> getBookList() {
+    public V getBookInfo() {
         return bookInfo;
     }
-
-    public void addInfo(V infobook) {
-        bookInfo.add(infobook);
-    }
-
-    @Override
-    public String toString() {
-        return "LibraryCard{" +
-                "cardNumber= " +
-                "," + bookInfo +
-                '}';
-    }
-
 }
