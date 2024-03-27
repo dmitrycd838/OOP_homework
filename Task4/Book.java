@@ -1,7 +1,7 @@
 package Task4;
 
 public class Book<T> {
-    private T name;
+    private T name; // final
 
     public Book(T name) {
         this.name = name;
@@ -12,7 +12,7 @@ public class Book<T> {
     }
 
     @Override
-    public String toString() {
+    public String toString() {             
         return "Book{" +
                 "book title= " + name +
                 '}';
