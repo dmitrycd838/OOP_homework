@@ -7,12 +7,12 @@ import java.util.List;
 public class Liskov {
 
     public static void main(String[] args) {
-         List<Figures> list1 = new ArrayList<>(Arrays.asList(new Square(), new Rectangle()));
+         List<Figures> list1 = new ArrayList<>(Arrays.asList(new Rectangle(), new Square()));
         for (var figures : list1) {
             System.out.println(figures.getType());
         }
 
-        List<Sides> list2 = new ArrayList<>(Arrays.asList(new Square()));
+        List<Sides> list2 = new ArrayList<>(Arrays.asList(new Rectangle(), new Square()));
         for (var figures : list2) {
             System.out.println(figures.getLegsCount());
 
@@ -30,11 +30,11 @@ interface Sides {
     int getLegsCount();
 }
 
-class Square extends Figures implements Sides {
+class Rectangle extends Figures implements Sides {
 
     @Override
     public String getType() {
-        return "Квадрат";
+        return "Прямоугольник";
     }
 
     @Override
@@ -43,9 +43,9 @@ class Square extends Figures implements Sides {
     }
 }
 
-class  Rectangle extends Figures {
+class Square extends Rectangle {
     @Override
     public String getType() {
-        return "Прямоугольник";
+        return "Квадрат";
     }
 }
