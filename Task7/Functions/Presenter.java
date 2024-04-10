@@ -66,6 +66,6 @@ public class Presenter <T extends Model> {
                 break;
             }
         }
-        log.writeFile(txt, "Logging\\Saving.txt");
+        log.writeFile(txt, "Task7\\Logging\\Saving.txt");
     }
 }
