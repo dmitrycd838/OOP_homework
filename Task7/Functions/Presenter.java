@@ -22,6 +22,7 @@ public class Presenter <T extends Model> {
 
    
     public void runOperation() {
+        
         Logtxt log = new Logtxt();
         String txt = "";
         Double x = v.inputDouble.apply("Введите первое число: ");
